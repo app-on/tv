@@ -46,4 +46,8 @@ const loadedmetadataHls =( url )=>{
     }  
 }
 
+addEventListener('contextmenu', (e)=> {
+    e.preventDefault()
+})
+
 
