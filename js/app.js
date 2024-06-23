@@ -37,7 +37,6 @@ addEventListener('contextmenu', (e)=> {
 
 
 fetch('./json/channels.json').then( res =>  res.json() ).then( channels => {
-    console.log(channels);
     $channels.innerHTML = channels.map( channel => {
         return `
             <button class="button_3c7P4bO" title="${ channel.title }" data-url="${ channel.url }"><img src="${ channel.image }" alt=""></button>
